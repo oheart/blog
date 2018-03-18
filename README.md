@@ -1,5 +1,8 @@
 ## blog
 personal blog
+## 项目运行
+- 开发：npm start
+- 生产：npm run build
 ## focus
 ### webpack4 
 1. mode: 模式配置
