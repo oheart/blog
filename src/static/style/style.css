@@ -38,7 +38,7 @@ body {
   top: 0;
   z-index: 999;
   width: 100%;
-  height: 48px;
+  height: 50px;
   line-height: 50px;
 }
 .blog-hd-container .hd-operate-container .hd-operate {
@@ -48,33 +48,38 @@ body {
 .blog-hd-container .hd-operate-container .hd-operate .blog-hd-nav .blog-nav-item {
   float: left;
   padding: 0 16px;
+  transition: color .3s;
 }
 .blog-hd-container .hd-operate-container .hd-operate .blog-hd-nav .blog-nav-item:hover {
-  background: #000;
-  color: #FFF;
+  color: #f2bdaf;
 }
 .blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .search-blog-input {
   color: #999;
   font-size: 1.2rem;
-  height: 48px;
-  line-height: 48px;
-  padding-left: 6px;
+  padding: 4px 0 4px 3px;
+  border-bottom: 1px solid #eee;
+  width: 200px;
+}
+.blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .search-icon {
   margin-right: 20px;
+  vertical-align: middle;
 }
 .blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate {
   color: #999;
-}
-.blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .create-post {
-  color: #007fff;
+  font-size: 1.3rem;
 }
 .blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-signin {
   margin: 0 16px 0 20px;
+  transition: color .3s;
 }
 .blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-signin:hover {
-  color: #000;
+  color: #f2bdaf;
+}
+.blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-signup {
+  transition: color .3s;
 }
 .blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-signup:hover {
-  color: #000;
+  color: #f2bdaf;
 }
 .blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-logined-avatar {
   width: 24px;
@@ -82,11 +87,33 @@ body {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 16px;
+  margin-left: 20px;
+}
+.blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-center-nav {
+  margin-left: 20px;
+}
+.blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-center-dropdown {
+  background: #FFF;
+  width: 12rem;
+  text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0;
+  top: 51px;
+  z-index: 999;
+}
+.blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-center-dropdown .user-menu-item {
+  border-bottom: 1px solid #e5e5e5;
+  transition: color .3s;
+  height: 32px;
+  line-height: 32px;
+}
+.blog-hd-container .hd-operate-container .hd-operate .blog-related-operate .user-operate .user-center-dropdown .user-menu-item:hover {
+  color: #f2bdaf;
 }
 .blog-hd-container .blog-uinfo-container {
   margin-top: 50px;
-  background-image: url(https://blog.dandyweng.com/wp-content/themes/albatross/images/overlay-lba.png), url(https://blog.dandyweng.com/wp-content/themes/albatross/backgrounds/01.jpg);
+  background-image: url(../img/overlay-lba.png), url('../img/mountain_bg.jpg');
   padding: 5em 0;
   text-align: center;
   background-attachment: scroll;
@@ -232,4 +259,25 @@ body {
 .post-main-container .post-slidebar-part .post-labels .post-label-item:hover {
   background: #f2bdaf;
   color: #fff;
+}
+.post-main-container .post-footer-container {
+  margin: 50px auto 0;
+}
+.post-main-container .post-footer-container .post-footer-item {
+  width: calc(16.66666667%);
+  position: relative;
+}
+.post-main-container .post-footer-container .post-footer-item .post-footer-item-img {
+  width: 100%;
+}
+.post-main-container .post-footer-container .post-footer-item .post-footer-item-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.4);
+  text-shadow: 2px 2px 8px #fff;
+  font: normal 400 11px Roboto, sans-serif;
+  color: #222;
 }
